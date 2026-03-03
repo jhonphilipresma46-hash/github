@@ -1,31 +1,31 @@
 #include <stdio.h>
+int main()
+{
 
-int main() {
-    int arr[50];
-    int i, num;
-    int found = 0;
+  int arr[50];
+  int n = 50;
+  int search, i;
+  int found = 0;
 
-    
-    for(i = 0; i < 50; i++) {
-        arr[i] = i + 1;
+  for (int i = 0; i < 101; i++)
+  {
+    arr[i] = 50 + i;
+  }
+  printf("Input a number: ");
+  scanf("%d", &search);
+  for (i = 0; i < n; i++)
+  {
+
+    if (arr[i] == search)
+    {
+      found = 1;
+      printf("Found in Index %d", i);
     }
+  }
+  if (found == 0)
+  {
+    printf("Not found");
+  }
 
-    printf("Enter a number to search: ");
-    scanf("%d", &num);
-
-    
-    for(i = 0; i < 50; i++) {
-        if(arr[i] == num) {
-            printf("Number found at index: %d\n", i);
-            found = 1;
-            break;
-        }
-    }
-
-    
-    if(found == 0) {
-        printf("Number not found in the array.\n");
-    }
-
-    return 0;
+  return 0;
 }
