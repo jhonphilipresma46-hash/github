@@ -4,7 +4,7 @@ void printarray(int arr[], int n)
  {
 for (int i = 0; i < n; i++)
 {
-  printf("%d \n", arr[i]);
+  printf("%d ", arr[i]);
 }
  }
 
@@ -42,18 +42,19 @@ int main()
   int n = sizeof(arr)/sizeof(arr[0]);
 
   printf("###Selection Sort###\n");
-  printf("Unsorted array : \n");
+  
+  printf("\nUnsorted array : \n");
   printarray(arr, n);
 
   selectionsort(arr, n);    
 
   int swaps = selectionsort(arr, n);
   int comparisons = selectionsort(arr, n);
-
-  printf("Sorted array: \n");
+printf("\n");
+  printf("\nSorted array: \n");
   printarray(arr, n); 
-
-    printf("Number of swaps: %d\n", swaps);
+printf("\n");
+    printf("\nNumber of swaps: %d\n", swaps);
     printf("Number of comparisons: %d\n", comparisons); 
 
     return 0;
