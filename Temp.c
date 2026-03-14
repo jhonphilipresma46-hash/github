@@ -10,11 +10,10 @@ int length;
 
 char text[50];
 
-printf("Enter a word : %s\n", text);
+printf("Enter a word : %s", text);
 scanf("%s", &text);
 text[0] = toupper(text[0]);
 
-printf("Enter a number : ", num);
 scanf("%lf", &num);
 
 length = strlen(text);
