@@ -14,7 +14,9 @@ printf("Enter a word : %s", text);
 scanf("%s", &text);
 text[0] = toupper(text[0]);
 
+printf("Enter a number : ");
 scanf("%lf", &num);
+
 
 length = strlen(text);
 printf("Length : %d\n", length);

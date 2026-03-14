@@ -1,9 +1,1 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <ctype.h>
-
-int main()
-{
-double num;
-int length;
+printf("The capital of the word is : %s", text);
