@@ -8,7 +8,7 @@ int main()
     char section[50];
     int age; 
 
-    sprintf(name, "Jhon Philip");
+    sprintf(name, "Jhon Philip L. Resma");
     age = 19;
     sprintf(program, "Diploma in Information Technology");
     sprintf(section, "1-1");
