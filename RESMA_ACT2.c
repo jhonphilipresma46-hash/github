@@ -25,7 +25,7 @@ for (int i = 0; i < 5; i++) {
 sum = sum + *(ptr + i);
 }
 
-print("\nThe sum of all numbers is = ")
+printf("\nThe sum of all numbers is = ");
 printf("%d", sum);
 
 
